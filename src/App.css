@@ -1,0 +1,21 @@
+.hero{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+}
+
+.hero--header {
+  font-weight: bolder;
+}
+
+.hero--text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+
+}
+
