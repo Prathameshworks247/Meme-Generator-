@@ -12,14 +12,30 @@ body {
   padding-left: 10px;
 }
 
+
 .header {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-    color: white;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding: 20px;
 }
+
+.header--image {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+.header--project {
+  font-size: 0.75rem;
+  font-weight: 500;
+} 
 
 .pro-text {
   padding-left: 500px;
@@ -54,6 +70,45 @@ body {
   justify-content: space-evenly;
   font-weight: bold;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.img2 {
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Horizontally centers the image */
+  max-width: 100%;
+  width: 70%;
+  height: auto;
+}
+
+.top-text, .bottom-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white; /* Change text color as needed */
+  font-weight: bold;
+  left: 0; /* Ensure text stays within image width */
+  padding: 50px;
+  font-size: 100px;
+  font-family: fantasy;
+  text-shadow:
+  -2px -2px 0 black, /* Top-left */
+  1px -1px 0 black,  /* Top-right */
+  -2px 2px 0 black,  /* Bottom-left */
+  2px 2px 0 black;   /* Bottom-right */
+
+}
+
+.top-text {
+  top: 0; /* Positions text at the top of the image */
+}
+
+.bottom-text {
+  bottom: 0; /* Positions text at the bottom (base) of the image */
+}
+
 
 main {
   display: flex;
