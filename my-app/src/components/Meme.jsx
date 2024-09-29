@@ -9,6 +9,11 @@ export default function Meme(){
     })
     const [allMemeImages, setAllMemeImages] = React.useState(memesData)
     
+    React.useEffect(()=>{
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(data => setAllMemes(data.data.memes))
+    }, [])
     
     function getMemeImage() {
         const memesArray = allMemeImages.data.memes
@@ -21,6 +26,8 @@ export default function Meme(){
         )
         )
     }
+
+
     function handleChange(){
         const {name, value} = event.target
         setMeme(prevMeme => ({
